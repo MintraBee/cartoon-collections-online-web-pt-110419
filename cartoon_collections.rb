@@ -3,6 +3,15 @@ def roll_call_dwarves["Doc", "Dopey", "Bashful", "Grumpy"]
   puts name
 end
 
+dwarves = %w[
+  Doc
+  Dopey
+  Bashful
+  Grumpy
+  Sneezy
+  Sleepy
+  Happy
+]
 
 def summon_captain_planet(planeteer_calls)
  planeteer_calls = ["earth", "wind", "fire", "water", "heart"]
