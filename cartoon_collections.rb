@@ -21,6 +21,16 @@ end
 
 roll_call_dwarves(dwarves)
 
+planeteer_calls = %w[earth wind fire water heart]
+
+# Expected return value: ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
+def summon_captain_planet(planeteer_calls)
+  planeteer_calls.map { |call| call.capitalize + '!' }
+end
+
+summon_captain_planet(planeteer_calls)
+
+
 
 def find_the_cheese(cheese_types)
   i = 0 
