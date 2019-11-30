@@ -13,21 +13,14 @@ dwarves = %w[
   Happy
 ]
 
-def summon_captain_planet(planeteer_calls)
- planeteer_calls = ["earth", "wind", "fire", "water", "heart"]
- planeteer_calls.collect {|i| i + "!"} 
+def roll_call_dwarves(dwarves)
+  dwarves.each_with_index do |dwarf, index|
+    puts "#{index + 1}. #{dwarf}"
+  end
 end
 
-def long_planeteer_calls# code an argument here
+roll_call_dwarves(dwarves)
 
-short_words = ["puff", "go", "two"]
-long_planeteer_calls(short_words)
-
-assorted_words = ["two", "go", "industrious", "bop"]
-long_planeteer_calls(assorted_words)
-
-
-end
 
 def find_the_cheese(cheese_types)
   i = 0 
